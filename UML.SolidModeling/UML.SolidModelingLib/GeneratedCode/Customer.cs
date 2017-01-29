@@ -18,46 +18,26 @@ public class Customer
     /// Reference to the type of customer
     /// </summary>
     public virtual CustomersType CustomerType
-	{
-		get { return _customerType; }
-		set { _customerType = value; }
-	}
+    {
+        get { return _customerType; }
+        set { _customerType = value; }
+    }
 
-	public virtual void Add()
-	{
+    public virtual void Add()
+    {
         try
         {
-
+            //Business rules goes here.
         }
         catch (Exception err)
         {
             _myLogger.Handle(err.Message);
         }
-	}
-
-	public double getDiscount(double totalSales)
-	{
-        double totalDiscount = 0.0;
-		switch (_customerType)
-        {
-            case CustomersType.Gold_Partner: {
-                    totalDiscount = 0.70;
-                    break;
-                }
-            case CustomersType.Silver_Partner:
-                {
-                    totalDiscount = 0.30;
-                    break;
-                }
-            case CustomersType.Registered_Partner:
-                {
-                    totalDiscount = 0.10;
-                    break;
-                }
-        }
-        return (totalSales * totalDiscount);
-
     }
+    public virtual double getDiscount(double TotalSales)
+	{
+        return TotalSales;
+	}
 
 }
 

@@ -4,14 +4,14 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-public enum CustomersType : int
+public class GoldCustomer : Customer
 {
-	Gold_Partner = 1,
-	Silver_Partner = 2,
-	Registered_Partner = 3,
+	public override double getDiscount(double TotalSales)
+	{
+        var sales = base.getDiscount(TotalSales);
+        return (sales * 0.30);
+    }
+
 }
+

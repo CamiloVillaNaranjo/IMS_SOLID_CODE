@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UML.SolidModelingLib
 {
@@ -10,11 +6,29 @@ namespace UML.SolidModelingLib
     {
         static void Main()
         {
-            var goldClient = new Customer();
-            goldClient.CustomerType = CustomersType.Gold_Partner;
-            var discount = goldClient.getDiscount(1500000);
+            var client = new Customer();
+            client.CustomerType = CustomersType.Gold_Partner;
+            var discount = client.getDiscount(1500000);
 
-            Console.WriteLine("Discount achieved was: $ {0}", discount);
+            Console.WriteLine("Discount achieved for a client was: $ {0}", discount.ToString("N2"));
+            Console.ReadLine();
+
+            var goldClient = new GoldCustomer();
+            var goldDiscount = goldClient.getDiscount(1500000);
+
+            Console.WriteLine("Discount achieved for gold was: $ {0}", goldDiscount.ToString("N2"));
+            Console.ReadLine();
+
+            var silverClient = new SilverCustomer();
+            var silverDiscount = silverClient.getDiscount(1500000);
+
+            Console.WriteLine("Discount achieved for silver was: $ {0}", silverDiscount.ToString("N2"));
+            Console.ReadLine();
+
+            var registeredClient = new RegisteredCustomer();
+            var registeredDiscount = registeredClient.getDiscount(1500000);
+
+            Console.WriteLine("Discount achieved for registered was: $ {0}", registeredDiscount.ToString("N2"));
             Console.ReadLine();
         }
     }

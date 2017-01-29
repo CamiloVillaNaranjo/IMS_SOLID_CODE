@@ -46,6 +46,9 @@
     <Compile Include="GeneratedCode\Customer.cs" />
     <Compile Include="GeneratedCode\CustomersType.cs" />
     <Compile Include="GeneratedCode\FileLogger.cs" />
+    <Compile Include="GeneratedCode\GoldCustomer.cs" />
+    <Compile Include="GeneratedCode\RegisteredCustomer.cs" />
+    <Compile Include="GeneratedCode\SilverCustomer.cs" />
     <Compile Include="Programm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
