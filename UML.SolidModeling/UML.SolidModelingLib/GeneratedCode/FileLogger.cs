@@ -11,10 +11,10 @@ using System.Text;
 
 public class FileLogger
 {
-	public virtual void Handle(string error)
-	{
-		throw new System.NotImplementedException();
-	}
+    public void Handle(string error)
+    {
+        File.WriteAllText(@"c:\Error.txt", error);
+    }
 
 }
 
