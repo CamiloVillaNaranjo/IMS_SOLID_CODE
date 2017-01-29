@@ -40,18 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GeneratedCode\Developer.cs" />
-    <Compile Include="GeneratedCode\Employee.cs" />
-    <Compile Include="GeneratedCode\IDeveloper.cs" />
-    <Compile Include="GeneratedCode\IManager.cs" />
-    <Compile Include="GeneratedCode\ITester.cs" />
-    <Compile Include="GeneratedCode\Person.cs" />
-    <Compile Include="GeneratedCode\ProductOwner.cs" />
-    <Compile Include="GeneratedCode\Prototype.cs" />
-    <Compile Include="GeneratedCode\QADeveloper.cs" />
-    <Compile Include="GeneratedCode\Skill.cs" />
-    <Compile Include="GeneratedCode\TypeSkillEnum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GeneratedCode\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
