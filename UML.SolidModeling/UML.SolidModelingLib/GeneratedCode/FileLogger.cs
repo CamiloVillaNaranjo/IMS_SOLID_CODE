@@ -4,13 +4,14 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+using System.IO;
 
 public class FileLogger
 {
-	public virtual void Handle(string error)
-	{
-		throw new System.NotImplementedException();
-	}
+    public virtual void Handle(string error)
+    {
+        File.WriteAllText(@"c:\Error.txt", error);
+    }
 
 }
 
