@@ -16,5 +16,10 @@ public class RegisteredCustomer : Customer
         return (sales * 0.05);
     }
 
+    public override void Add()
+    {
+        throw new System.ApplicationException("Not allowed");
+    }
+
 }
 

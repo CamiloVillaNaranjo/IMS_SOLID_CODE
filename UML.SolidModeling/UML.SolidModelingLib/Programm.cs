@@ -18,6 +18,7 @@ namespace UML.SolidModelingLib
             {
                 var discount = item.getDiscount(sales);
                 Console.WriteLine("Discount achieved for {0} was: $ {1}", item.GetType().ToString(), discount.ToString("N2"));
+                item.Add();
             }
             Console.ReadLine();
         }
