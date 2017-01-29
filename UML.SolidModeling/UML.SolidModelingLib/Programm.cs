@@ -7,8 +7,7 @@ namespace UML.SolidModelingLib
     {
         static void Main()
         {
-            var clientList = new List<Customer>();
-            double sales = 1500000;
+            var clientList = new List<IManageable>();
 
             clientList.Add(new GoldCustomer());
             clientList.Add(new SilverCustomer());
@@ -17,8 +16,6 @@ namespace UML.SolidModelingLib
 
             foreach (var item in clientList)
             {
-                var discount = item.getDiscount(sales);
-                Console.WriteLine("Discount achieved for {0} was: $ {1}", item.GetType().ToString(), discount.ToString("N2"));
                 item.Add();
             }
             Console.ReadLine();
