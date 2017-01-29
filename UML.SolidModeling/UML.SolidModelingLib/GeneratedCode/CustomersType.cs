@@ -4,13 +4,10 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System.IO;
 
-public class FileLogger
+public enum CustomersType : int
 {
-    public void Handle(string error)
-    {
-        File.WriteAllText(@"c:\Error.txt", error);
-    }
-
+	Gold_Partner = 1,
+	Silver_Partner = 2,
+	Registered_Partner = 3,
 }

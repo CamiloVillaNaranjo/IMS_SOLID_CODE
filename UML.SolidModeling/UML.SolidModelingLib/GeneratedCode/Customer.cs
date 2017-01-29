@@ -5,20 +5,59 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 public class Customer
 {
-	public void Add()
+    private FileLogger _myLogger = new FileLogger();
+    private CustomersType _customerType;
+
+    /// <summary>
+    /// Reference to the type of customer
+    /// </summary>
+    public virtual CustomersType CustomerType
+	{
+		get { return _customerType; }
+		set { _customerType = value; }
+	}
+
+	public virtual void Add()
 	{
         try
         {
-            //Business call goes here
+
         }
         catch (Exception err)
         {
-            System.IO.File.WriteAllText(@"c:\Error.txt", err.ToString());
+            _myLogger.Handle(err.Message);
         }
 	}
+
+	public double getDiscount(double totalSales)
+	{
+        double totalDiscount = 0.0;
+		switch (_customerType)
+        {
+            case CustomersType.Gold_Partner: {
+                    totalDiscount = 0.70;
+                    break;
+                }
+            case CustomersType.Silver_Partner:
+                {
+                    totalDiscount = 0.30;
+                    break;
+                }
+            case CustomersType.Registered_Partner:
+                {
+                    totalDiscount = 0.10;
+                    break;
+                }
+        }
+        return (totalSales * totalDiscount);
+
+    }
 
 }
 
