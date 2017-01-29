@@ -8,6 +8,7 @@ using System;
 
 public class Customer
 {
+    private FileLogger _myLogger = new FileLogger();
 	public void Add()
 	{
         try
@@ -16,7 +17,7 @@ public class Customer
         }
         catch (Exception err)
         {
-            System.IO.File.WriteAllText(@"c:\Error.txt", err.ToString());
+            _myLogger.Handle(err.ToString());
         }
 	}
 
