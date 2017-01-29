@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeneratedCode\AnotherCustomer.cs" />
     <Compile Include="GeneratedCode\Customer.cs" />
     <Compile Include="GeneratedCode\CustomersType.cs" />
     <Compile Include="GeneratedCode\FileLogger.cs" />

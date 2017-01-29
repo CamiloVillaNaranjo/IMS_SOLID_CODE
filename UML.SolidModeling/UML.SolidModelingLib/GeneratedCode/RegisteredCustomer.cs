@@ -15,11 +15,5 @@ public class RegisteredCustomer : Customer
         var sales = base.getDiscount(TotalSales);
         return (sales * 0.05);
     }
-
-    public override void Add()
-    {
-        throw new System.ApplicationException("Not allowed");
-    }
-
 }
 
