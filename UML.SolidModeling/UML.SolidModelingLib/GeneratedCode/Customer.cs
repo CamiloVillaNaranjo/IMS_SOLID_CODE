@@ -6,7 +6,7 @@
 //------------------------------------------------------------------------------
 using System;
 
-public class Customer
+public class Customer : IDiscountable, IManageable
 {
     private FileLogger _myLogger = new FileLogger();
     private CustomersType _customerType;
