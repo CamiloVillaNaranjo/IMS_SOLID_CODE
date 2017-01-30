@@ -12,7 +12,7 @@ namespace UML.SolidModelingLib
             clientList.Add(new GoldCustomer());
             clientList.Add(new SilverCustomer());
             clientList.Add(new RegisteredCustomer());
-            clientList.Add(new AnotherCustomer());
+            clientList.Add(new PlatiniumCustomer());
 
             foreach (var item in clientList)
             {

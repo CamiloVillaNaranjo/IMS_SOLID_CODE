@@ -50,6 +50,8 @@
     <Compile Include="GeneratedCode\GoldCustomer.cs" />
     <Compile Include="GeneratedCode\IDiscountable.cs" />
     <Compile Include="GeneratedCode\IManageable.cs" />
+    <Compile Include="GeneratedCode\IManageableV1.cs" />
+    <Compile Include="GeneratedCode\PlatiniumCustomer.cs" />
     <Compile Include="GeneratedCode\RegisteredCustomer.cs" />
     <Compile Include="GeneratedCode\SilverCustomer.cs" />
     <Compile Include="Programm.cs" />

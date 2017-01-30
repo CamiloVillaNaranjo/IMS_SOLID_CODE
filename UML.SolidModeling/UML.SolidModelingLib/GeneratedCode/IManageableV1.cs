@@ -4,19 +4,10 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
 
-public class SilverCustomer : Customer
+public interface IManageableV1  : IManageable
 {
-    public override void Add()
-    {
-        Console.WriteLine("Because I'm Silver Customer I can Add data");
-    }
-    public override double getDiscount(double TotalSales)
-	{
-        var sales = base.getDiscount(TotalSales);
-        return (sales * 0.15);
-	}
+	void Read();
 
 }
 

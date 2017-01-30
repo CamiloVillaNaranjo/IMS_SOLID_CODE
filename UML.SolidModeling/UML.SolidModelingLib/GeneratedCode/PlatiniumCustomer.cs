@@ -4,19 +4,26 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
 using System;
 
-public class SilverCustomer : Customer
+public class PlatiniumCustomer : Customer, IManageableV1
 {
-    public override void Add()
-    {
-        Console.WriteLine("Because I'm Silver Customer I can Add data");
-    }
-    public override double getDiscount(double TotalSales)
+	public virtual void Read()
 	{
-        var sales = base.getDiscount(TotalSales);
-        return (sales * 0.15);
+        Console.WriteLine("Because I'm Platinium Customer I can read data");
 	}
+
+	public override void Add()
+	{
+        Console.WriteLine("Because I'm Platinium Customer I can Add data also");
+    }
+
+    public override double getDiscount(double TotalSales)
+    {
+        var sales = base.getDiscount(TotalSales);
+        return (sales * 0.45);
+    }
 
 }
 

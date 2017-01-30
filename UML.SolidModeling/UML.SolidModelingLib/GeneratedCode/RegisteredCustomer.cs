@@ -4,13 +4,18 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+using System;
 
 public class RegisteredCustomer : Customer
 {
-	/// <summary>
-	/// Get discount applied to total Sales
-	/// </summary>
-	public override double getDiscount(double TotalSales)
+    public override void Add()
+    {
+        Console.WriteLine("Because I'm Registered Customer I can Add data");
+    }
+    /// <summary>
+    /// Get discount applied to total Sales
+    /// </summary>
+    public override double getDiscount(double TotalSales)
 	{
         var sales = base.getDiscount(TotalSales);
         return (sales * 0.05);
