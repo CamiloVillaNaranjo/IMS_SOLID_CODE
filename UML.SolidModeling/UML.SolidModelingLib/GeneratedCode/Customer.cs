@@ -8,7 +8,8 @@ using System;
 
 public class Customer : IDiscountable, IManageable
 {
-    private FileLogger _myLogger = new FileLogger();
+    //private FileLogger _myLogger = new FileLogger();
+    private ILogger _myLogger;
     private CustomersType _customerType;
 
     /// <summary>
@@ -18,6 +19,11 @@ public class Customer : IDiscountable, IManageable
     {
         get { return _customerType; }
         set { _customerType = value; }
+    }
+
+    public Customer(ILogger log)
+    {
+        _myLogger = log;
     }
 
     public virtual void Add()
@@ -31,6 +37,7 @@ public class Customer : IDiscountable, IManageable
             _myLogger.Handle(err.Message);
         }
     }
+
     public virtual double getDiscount(double TotalSales)
 	{
         return TotalSales;

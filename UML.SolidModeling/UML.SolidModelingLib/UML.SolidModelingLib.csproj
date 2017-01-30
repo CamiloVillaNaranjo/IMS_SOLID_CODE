@@ -46,9 +46,12 @@
     <Compile Include="GeneratedCode\AnotherCustomer.cs" />
     <Compile Include="GeneratedCode\Customer.cs" />
     <Compile Include="GeneratedCode\CustomersType.cs" />
+    <Compile Include="GeneratedCode\EmailLogger.cs" />
+    <Compile Include="GeneratedCode\EvenViewerLogger.cs" />
     <Compile Include="GeneratedCode\FileLogger.cs" />
     <Compile Include="GeneratedCode\GoldCustomer.cs" />
     <Compile Include="GeneratedCode\IDiscountable.cs" />
+    <Compile Include="GeneratedCode\ILogger.cs" />
     <Compile Include="GeneratedCode\IManageable.cs" />
     <Compile Include="GeneratedCode\IManageableV1.cs" />
     <Compile Include="GeneratedCode\PlatiniumCustomer.cs" />

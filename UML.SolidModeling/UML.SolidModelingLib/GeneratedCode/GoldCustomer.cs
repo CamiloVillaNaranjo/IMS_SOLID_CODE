@@ -8,9 +8,23 @@ using System;
 
 public class GoldCustomer : Customer
 {
+    private ILogger _myLogger;
+    public GoldCustomer(ILogger log) : base(log)
+    {
+        _myLogger = log;
+    }
+
     public override void Add()
     {
-        Console.WriteLine("Because I'm Gold Customer I can Add data");
+        try
+        {
+            Console.WriteLine("Because I'm Gold Customer I can Add data");
+            throw new ApplicationException("Proof concept");
+        }
+        catch (Exception err)
+        {
+            _myLogger.Handle(err.Message);
+        }
     }
     public override double getDiscount(double TotalSales)
 	{

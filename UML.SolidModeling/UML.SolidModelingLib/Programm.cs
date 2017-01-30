@@ -9,15 +9,25 @@ namespace UML.SolidModelingLib
         {
             var clientList = new List<IManageable>();
 
-            clientList.Add(new GoldCustomer());
-            clientList.Add(new SilverCustomer());
-            clientList.Add(new RegisteredCustomer());
-            clientList.Add(new PlatiniumCustomer());
+            clientList.Add(new GoldCustomer(new EmailLogger()));
+            clientList.Add(new SilverCustomer(new FileLogger()));
+            clientList.Add(new RegisteredCustomer(new EvenViewerLogger()));
+            clientList.Add(new PlatiniumCustomer(new EmailLogger()));
 
             foreach (var item in clientList)
             {
-                item.Add();
+                try
+                {
+                    item.Add();
+                }
+                catch (Exception)
+                {
+                    continue;
+                }
             }
+
+            IManageable masterCardClient = new Customer(new EmailLogger());
+
             Console.ReadLine();
         }
     }

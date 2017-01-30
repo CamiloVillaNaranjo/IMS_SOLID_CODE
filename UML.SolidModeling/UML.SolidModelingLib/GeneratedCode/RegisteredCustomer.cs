@@ -8,9 +8,23 @@ using System;
 
 public class RegisteredCustomer : Customer
 {
+    private ILogger _myLogger;
+    public RegisteredCustomer(ILogger log) : base(log)
+    {
+        _myLogger = log;
+    }
+
     public override void Add()
     {
-        Console.WriteLine("Because I'm Registered Customer I can Add data");
+        try
+        {
+            Console.WriteLine("Because I'm Registered Customer I can Add data");
+            throw new ApplicationException("Proof concept");
+        }
+        catch (Exception err)
+        {
+            _myLogger.Handle(err.Message);
+        }
     }
     /// <summary>
     /// Get discount applied to total Sales

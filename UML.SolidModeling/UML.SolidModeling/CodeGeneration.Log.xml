@@ -6,24 +6,26 @@
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
-  <Message Timestamp="2017-01-29T22:27:29" Importance="High" Text="Code generation or text transformation started." />
-  <Message Timestamp="2017-01-29T22:27:29" Importance="Diagnostic" Text="Name = ClassTemplate" />
-  <Message Timestamp="2017-01-29T22:27:29" Importance="Diagnostic" Text="Overwrite = True" />
-  <Message Timestamp="2017-01-29T22:27:29" Importance="Diagnostic" Text="ProjectPath = ..\UML.SolidModelingLib\UML.SolidModelingLib.csproj" />
-  <Message Timestamp="2017-01-29T22:27:29" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2017-01-29T22:27:29" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2017-01-29T22:27:29" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
-  <Message Timestamp="2017-01-29T22:27:29" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
-  <Message Timestamp="2017-01-29T22:27:29" Importance="Medium" Text="UML.SolidModeling's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'UML.SolidModeling::PlatiniumCustomer' -  (Class) " />
-  <Message Timestamp="2017-01-29T22:27:30" Importance="Medium" Text="'UML.SolidModeling::PlatiniumCustomer' -  (Class) : success (file created) - D:\Yuxi\Code\Self-study\IMS_SOLID_DESIGNPATTERNS\UML.SolidModeling\UML.SolidModelingLib\GeneratedCode\PlatiniumCustomer.cs" />
-  <Message Timestamp="2017-01-29T22:27:30" Importance="Diagnostic" Text="Name = StructTemplate" />
-  <Message Timestamp="2017-01-29T22:27:30" Importance="Diagnostic" Text="Overwrite = True" />
-  <Message Timestamp="2017-01-29T22:27:30" Importance="Diagnostic" Text="ProjectPath = ..\UML.SolidModelingLib\UML.SolidModelingLib.csproj" />
-  <Message Timestamp="2017-01-29T22:27:30" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2017-01-29T22:27:30" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2017-01-29T22:27:30" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
-  <Message Timestamp="2017-01-29T22:27:30" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
-  <Message Timestamp="2017-01-29T22:27:30" Importance="Medium" Text="UML.SolidModeling's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'UML.SolidModeling::PlatiniumCustomer' -  (Class) " />
-  <Message Timestamp="2017-01-29T22:27:30" Importance="Diagnostic" Text="'UML.SolidModeling::PlatiniumCustomer' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
-  <Message Timestamp="2017-01-29T22:27:30" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+  <Message Timestamp="2017-01-29T22:44:50" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2017-01-29T22:44:50" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2017-01-29T22:44:50" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2017-01-29T22:44:50" Importance="Diagnostic" Text="ProjectPath = ..\UML.SolidModelingLib\UML.SolidModelingLib.csproj" />
+  <Message Timestamp="2017-01-29T22:44:50" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-01-29T22:44:50" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-01-29T22:44:50" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-01-29T22:44:50" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-01-29T22:44:50" Importance="Medium" Text="UML.SolidModeling's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'UML.SolidModeling::EmailLogger' -  (Class), 'UML.SolidModeling::EvenViewerLogger' -  (Class) " />
+  <Message Timestamp="2017-01-29T22:44:51" Importance="Medium" Text="'UML.SolidModeling::EmailLogger' -  (Class) : success (file created) - D:\Yuxi\Code\Self-study\IMS_SOLID_DESIGNPATTERNS\UML.SolidModeling\UML.SolidModelingLib\GeneratedCode\EmailLogger.cs" />
+  <Message Timestamp="2017-01-29T22:44:51" Importance="Medium" Text="'UML.SolidModeling::EvenViewerLogger' -  (Class) : success (file created) - D:\Yuxi\Code\Self-study\IMS_SOLID_DESIGNPATTERNS\UML.SolidModeling\UML.SolidModelingLib\GeneratedCode\EvenViewerLogger.cs" />
+  <Message Timestamp="2017-01-29T22:44:51" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2017-01-29T22:44:51" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2017-01-29T22:44:51" Importance="Diagnostic" Text="ProjectPath = ..\UML.SolidModelingLib\UML.SolidModelingLib.csproj" />
+  <Message Timestamp="2017-01-29T22:44:51" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-01-29T22:44:51" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-01-29T22:44:51" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-01-29T22:44:51" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-01-29T22:44:51" Importance="Medium" Text="UML.SolidModeling's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'UML.SolidModeling::EmailLogger' -  (Class), 'UML.SolidModeling::EvenViewerLogger' -  (Class) " />
+  <Message Timestamp="2017-01-29T22:44:51" Importance="Diagnostic" Text="'UML.SolidModeling::EmailLogger' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-01-29T22:44:51" Importance="Diagnostic" Text="'UML.SolidModeling::EvenViewerLogger' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-01-29T22:44:51" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
 </Log>

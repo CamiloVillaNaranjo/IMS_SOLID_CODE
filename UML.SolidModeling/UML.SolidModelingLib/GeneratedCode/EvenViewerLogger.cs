@@ -4,14 +4,14 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System.IO;
+using System;
 
-public class FileLogger:ILogger
+public class EvenViewerLogger : ILogger
 {
-    public virtual void Handle(string error)
-    {
-        File.WriteAllText(@"c:\Error.txt", error);
-    }
+	public virtual void Handle(string error)
+	{
+        Console.WriteLine("I will write this info '{0}' in Event Viewer", error);
+	}
 
 }
 

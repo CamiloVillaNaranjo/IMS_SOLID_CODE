@@ -9,14 +9,28 @@ using System;
 
 public class PlatiniumCustomer : Customer, IManageableV1
 {
-	public virtual void Read()
+    private ILogger _myLogger;
+    public PlatiniumCustomer(ILogger log) : base(log)
+    {
+        _myLogger = log;
+    }
+
+    public virtual void Read()
 	{
         Console.WriteLine("Because I'm Platinium Customer I can read data");
 	}
 
 	public override void Add()
 	{
-        Console.WriteLine("Because I'm Platinium Customer I can Add data also");
+        try
+        {
+            Console.WriteLine("Because I'm Platinium Customer I can Add data also");
+            throw new ApplicationException("Proof concept");
+        }
+        catch (Exception err)
+        {
+            _myLogger.Handle(err.Message);
+        }
     }
 
     public override double getDiscount(double TotalSales)
